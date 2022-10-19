@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="wG6P|iyi)#q;d9Zzq@4s">Player</variable><variable type="KIND_SpriteKind" id="U*hj%F8oc9*#voI8|`Zp">Projectile</variable><variable type="KIND_SpriteKind" id="cj)anm^{7FH~K#UqhU*B">Food</variable><variable type="KIND_SpriteKind" id="T._y`b`*!UO47Dt(JV!a">Enemy</variable><variable id="O=tBfz~;7ZADaFVE7W%[">Player1</variable><variable id="P)iKB51a1lI~v@x])hw[">mySprite</variable><variable id="Qt}TJOS4T6c82]D?dG#0">Player2</variable></variables><block type="pxt-on-start" id="E=p[VqC7CH9ma|MBlI[U" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="VT,1p/lj25w:|P#W+P1*"><field name="VAR" id="O=tBfz~;7ZADaFVE7W%[">Player1</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="5}F@uHRFZ$tPX3`$eLcG"><value name="img"><shadow type="screen_image_picker" id="IHK~WpG$9h5g-,Q*eiB;"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . 8 8 8 . . . . . . . . 
+. . . . . 8 8 8 . . . . . . . . 
+. . . . . 8 8 8 . . . . . . . . 
+. . . . . 8 8 8 . . . . . . . . 
+. . . . . 8 8 8 . . . . . . . . 
+. . . . . 8 8 8 . . . . . . . . 
+. . . . . 8 8 8 . . . . . . . . 
+. . . . . 8 8 8 . . . . . . . . 
+. . . . . 8 8 8 . . . . . . . . 
+. . . . . 8 8 8 . . . . . . . . 
+. . . . . 8 8 8 . . . . . . . . 
+. . . . . 8 8 8 . . . . . . . . 
+. . . . . 8 8 8 . . . . . . . . 
+. . . . . 8 8 8 . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"IHK~WpG$9h5g-,Q*eiB;"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="ujE$kkw*_z[F?[%@MO3o"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="game_control_sprite" id="W7^ET^$aYy_v#^`G]9u0"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="SxXcBRKo#(.q1K;JIV-("><field name="VAR" id="O=tBfz~;7ZADaFVE7W%[">Player1</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="i,BU9{%GiO%nz.sah4IX"><field name="speed">0</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="MH[Z~.F1jfcE/)xelG6b"><field name="speed">100</field></shadow></value><next><block type="Sprite_blockCombine_set" id="zG?XguaUZ1$$B0iA%$_z"><field name="property">Sprite.x@set</field><value name="mySprite"><block type="variables_get" id="YHKZ.|f;$79KuN,q$}6|"><field name="VAR" id="O=tBfz~;7ZADaFVE7W%[">Player1</field></block></value><value name="value"><shadow type="math_number" id="gpNQH!9CFGpLYhz;/r?)"><field name="NUM">0</field></shadow></value><next><block type="spritesetsetstayinscreen" id="Nh/H,:tmK:Xfpu}-bOJ|"><value name="sprite"><block type="variables_get" id="3(sJi#)6L=c[7=qzWTK:"><field name="VAR" id="O=tBfz~;7ZADaFVE7W%[">Player1</field></block></value><value name="on"><shadow type="toggleOnOff" id="MU48[Lv]pU-C}TCD_MJA"><field name="on">true</field></shadow></value><next><block type="hudsetScore" id=";D_.Wmx6{/W5G|A9,Cu}"><value name="value"><shadow type="math_number" id="K^bIHQt9iS/I^{Jrc%X*"><field name="NUM">0</field></shadow></value><next><block type="variables_set" id="bPE[5MJ`G(%uy`vU;zw."><field name="VAR" id="Qt}TJOS4T6c82]D?dG#0">Player2</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="ITAQC]lQDBrEpS@.{Z6z"><value name="img"><shadow type="screen_image_picker" id="SGf6Rlxm2e5;h}(pM-7P"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . 2 2 2 . . . . . . . 
+. . . . . . 2 2 2 . . . . . . . 
+. . . . . . 2 2 2 . . . . . . . 
+. . . . . . 2 2 2 . . . . . . . 
+. . . . . . 2 2 2 . . . . . . . 
+. . . . . . 2 2 2 . . . . . . . 
+. . . . . . 2 2 2 . . . . . . . 
+. . . . . . 2 2 2 . . . . . . . 
+. . . . . . 2 2 2 . . . . . . . 
+. . . . . . 2 2 2 . . . . . . . 
+. . . . . . 2 2 2 . . . . . . . 
+. . . . . . 2 2 2 . . . . . . . 
+. . . . . . 2 2 2 . . . . . . . 
+. . . . . . 2 2 2 . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"SGf6Rlxm2e5;h}(pM-7P"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id=",Eh%ptuO:A-dN_/jgMf3"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="Sprite_blockCombine_set" id="Zp83n!{5#-Lfl+8tC0Z2"><field name="property">Sprite.x@set</field><value name="mySprite"><block type="variables_get" id="N,=Km.)n^!H0eed8=:Rq"><field name="VAR" id="Qt}TJOS4T6c82]D?dG#0">Player2</field></block></value><value name="value"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="scenescreenwidth" id="#wHGlH:N9Bdg{G-!dOkA"></block></value><next><block type="spritesetsetstayinscreen" id="aRj)oq~.(*IEq%ouByho"><value name="sprite"><block type="variables_get" id="w-ck?Q4bi~oSKi}@)5!$"><field name="VAR" id="O=tBfz~;7ZADaFVE7W%[">Player1</field></block></value><value name="on"><shadow type="toggleOnOff" id="0jU#fw-Ai_JIj5wy]}_?"><field name="on">true</field></shadow></value><next><block type="pisetscore" id="U.K8Fb2R4;0MO-oIF1//"><field name="player">info.player2</field><value name="value"><shadow type="math_number" id="2^wi#.rE/xd52l,vc;@1"><field name="NUM">0</field></shadow></value><next><block type="game_control_sprite" id="^b(wYLz{wCBz%!95FU0v"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="#e@wdbtqoRAdZuy,|Fv["><field name="VAR" id="Qt}TJOS4T6c82]D?dG#0">Player2</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="Du+{[Nix@wsom~Ek6tm2"><field name="speed">0</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="Z[i(?m!J7*seBOdMmFQE"><field name="speed">100</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
